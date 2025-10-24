@@ -52,21 +52,21 @@
           <div class="w-9 h-9 rounded-xl bg-brand-500 text-white grid place-content-center text-lg font-bold">₿</div>
           <h1 class="text-xl font-semibold" data-i18n="header_title">Money Tracker</h1>
         </div>
-        <div class="flex items-center gap-2">
+        <div class="flex items-center flex-wrap gap-1 sm:gap-2">
           <div id="langSwitch" class="flex items-center mr-2 border border-slate-200 rounded-lg overflow-hidden dark:border-slate-600">
-            <button type="button" data-lang="en" class="px-2 py-2 text-sm bg-slate-900 text-white">EN</button>
-            <button type="button" data-lang="fr" class="px-2 py-2 text-sm bg-white dark:bg-slate-700 dark:text-slate-100">FR</button>
+            <button type="button" data-lang="en" class="px-2 py-1.5 text-xs sm:text-sm bg-slate-900 text-white">EN</button>
+            <button type="button" data-lang="fr" class="px-2 py-1.5 text-xs sm:text-sm bg-white dark:bg-slate-700 dark:text-slate-100">FR</button>
           </div>
-          <button id="themeToggle" data-i18n-attr-title="theme_toggle_title" title="Toggle theme" class="px-3 py-2 text-sm font-medium bg-white border border-slate-200 rounded-lg hover:bg-slate-100 dark:bg-slate-700 dark:text-slate-100 dark:border-slate-600 dark:hover:bg-slate-600">🌞/🌙</button>
+          <button id="themeToggle" data-i18n-attr-title="theme_toggle_title" title="Toggle theme" class="px-2 py-1.5 text-xs sm:px-3 sm:py-2 sm:text-sm font-medium bg-white border border-slate-200 rounded-lg hover:bg-slate-100 dark:bg-slate-700 dark:text-slate-100 dark:border-slate-600 dark:hover:bg-slate-600">🌞/🌙</button>
           <span class="hidden sm:inline text-sm text-slate-500 dark:text-slate-300" data-i18n="select_currency">Select your currency</span>
-          <input id="currencyInput" value="USD" placeholder="Currency" data-i18n-attr-placeholder="currency_placeholder" data-i18n-attr-title="currency_title" title="Enter ISO currency code (e.g., USD, EUR, INR)" class="w-24 px-2 py-2 text-sm bg-white border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-200 dark:bg-slate-700 dark:text-slate-100 dark:border-slate-600 dark:placeholder-slate-400 dark:focus:ring-brand-800" />
-          <button id="exportJsonBtn" class="px-3 py-2 text-sm font-medium bg-slate-900 text-white rounded-lg hover:bg-slate-800" data-i18n="export_json">Export JSON</button>
-          <label class="px-3 py-2 text-sm font-medium bg-white border border-slate-200 rounded-lg hover:bg-slate-100 cursor-pointer dark:bg-slate-700 dark:text-slate-100 dark:border-slate-600 dark:hover:bg-slate-600">
+          <input id="currencyInput" value="USD" placeholder="Currency" data-i18n-attr-placeholder="currency_placeholder" data-i18n-attr-title="currency_title" title="Enter ISO currency code (e.g., USD, EUR, INR)" class="w-20 sm:w-24 px-2 py-2 text-sm bg-white border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-200 dark:bg-slate-700 dark:text-slate-100 dark:border-slate-600 dark:placeholder-slate-400 dark:focus:ring-brand-800" />
+          <button id="exportJsonBtn" class="px-2 py-1.5 text-xs sm:px-3 sm:py-2 sm:text-sm font-medium bg-slate-900 text-white rounded-lg hover:bg-slate-800" data-i18n="export_json">Export JSON</button>
+          <label class="px-2 py-1.5 text-xs sm:px-3 sm:py-2 sm:text-sm font-medium bg-white border border-slate-200 rounded-lg hover:bg-slate-100 cursor-pointer dark:bg-slate-700 dark:text-slate-100 dark:border-slate-600 dark:hover:bg-slate-600">
             <input id="importJsonInput" type="file" accept="application/json" class="hidden" />
             <span data-i18n="import_json">Import JSON</span>
           </label>
-          <button id="seedBtn" class="px-3 py-2 text-sm font-medium bg-brand-500 text-white rounded-lg hover:bg-brand-600" data-i18n="seed_sample">Seed Sample</button>
-          <button id="resetBtn" class="px-3 py-2 text-sm font-medium bg-white border border-slate-200 rounded-lg hover:bg-slate-100 dark:bg-slate-700 dark:text-slate-100 dark:border-slate-600 dark:hover:bg-slate-600" data-i18n="reset">Reset</button>
+          <button id="seedBtn" class="px-2 py-1.5 text-xs sm:px-3 sm:py-2 sm:text-sm font-medium bg-brand-500 text-white rounded-lg hover:bg-brand-600" data-i18n="seed_sample">Seed Sample</button>
+          <button id="resetBtn" class="px-2 py-1.5 text-xs sm:px-3 sm:py-2 sm:text-sm font-medium bg-white border border-slate-200 rounded-lg hover:bg-slate-100 dark:bg-slate-700 dark:text-slate-100 dark:border-slate-600 dark:hover:bg-slate-600" data-i18n="reset">Reset</button>
         </div>
       </div>
     </header>
@@ -74,21 +74,21 @@
     <main class="max-w-6xl mx-auto px-4 py-6 grid grid-cols-1 lg:grid-cols-3 gap-6">
       <section class="lg:col-span-2 space-y-6">
         <div class="grid grid-cols-3 gap-4">
-          <div class="bg-white border border-slate-200 rounded-xl p-4 dark:bg-slate-800 dark:border-slate-700">
+          <div class="bg-white border border-slate-200 rounded-xl p-3 sm:p-4 dark:bg-slate-800 dark:border-slate-700">
             <div class="text-sm text-slate-500 dark:text-slate-300" data-i18n="income">Income</div>
             <div id="incomeTotal" class="mt-1 text-2xl font-semibold text-emerald-600">$0</div>
           </div>
-          <div class="bg-white border border-slate-200 rounded-xl p-4 dark:bg-slate-800 dark:border-slate-700">
+          <div class="bg-white border border-slate-200 rounded-xl p-3 sm:p-4 dark:bg-slate-800 dark:border-slate-700">
             <div class="text-sm text-slate-500 dark:text-slate-300" data-i18n="expenses">Expenses</div>
             <div id="expenseTotal" class="mt-1 text-2xl font-semibold text-rose-600">$0</div>
           </div>
-          <div class="bg-white border border-slate-200 rounded-xl p-4 dark:bg-slate-800 dark:border-slate-700">
+          <div class="bg-white border border-slate-200 rounded-xl p-3 sm:p-4 dark:bg-slate-800 dark:border-slate-700">
             <div class="text-sm text-slate-500 dark:text-slate-300" data-i18n="balance">Balance</div>
             <div id="balanceTotal" class="mt-1 text-2xl font-semibold">$0</div>
           </div>
         </div>
 
-        <div class="bg-white border border-slate-200 rounded-xl p-4 dark:bg-slate-800 dark:border-slate-700">
+        <div class="bg-white border border-slate-200 rounded-xl p-3 sm:p-4 dark:bg-slate-800 dark:border-slate-700">
           <h2 class="font-semibold mb-3" data-i18n="add_transaction">Add Transaction</h2>
           <form id="txForm" class="grid grid-cols-1 md:grid-cols-6 gap-3">
             <select id="txType" class="md:col-span-1 border-slate-200 rounded-lg bg-white dark:bg-slate-700 dark:text-slate-100 dark:border-slate-600">
@@ -106,7 +106,7 @@
           </form>
         </div>
 
-        <div class="bg-white border border-slate-200 rounded-xl p-4 space-y-3 dark:bg-slate-800 dark:border-slate-700">
+        <div class="bg-white border border-slate-200 rounded-xl p-3 sm:p-4 space-y-3 dark:bg-slate-800 dark:border-slate-700">
           <div class="grid grid-cols-1 md:grid-cols-5 gap-3">
             <select id="filterType" class="border-slate-200 rounded-lg bg-white dark:bg-slate-700 dark:text-slate-100 dark:border-slate-600">
               <option value="all" data-i18n="filter_all">All</option>
@@ -118,8 +118,8 @@
             <input id="filterTo" type="date" class="border-slate-200 rounded-lg bg-white dark:bg-slate-700 dark:text-slate-100 dark:border-slate-600 focus:outline-none focus:ring-2 focus:ring-brand-200 dark:focus:ring-brand-800" />
             <input id="filterSearch" type="text" placeholder="Search note" data-i18n-attr-placeholder="search_note" class="border-slate-200 rounded-lg bg-white dark:bg-slate-700 dark:text-slate-100 dark:border-slate-600 dark:placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-brand-200 dark:focus:ring-brand-800" />
           </div>
-          <div class="overflow-hidden border border-slate-200 rounded-xl dark:border-slate-700">
-            <table class="w-full text-sm">
+          <div class="overflow-x-auto border border-slate-200 rounded-xl dark:border-slate-700">
+            <table class="w-full min-w-[640px] text-sm">
               <thead class="bg-slate-50 text-slate-600 dark:bg-slate-900/40 dark:text-slate-300">
                 <tr>
                   <th class="text-left px-3 py-2" data-i18n="date_col">Date</th>
@@ -144,13 +144,13 @@
       </section>
 
       <aside class="space-y-6">
-        <div class="bg-white border border-slate-200 rounded-xl p-4 dark:bg-slate-800 dark:border-slate-700">
+        <div class="bg-white border border-slate-200 rounded-xl p-3 sm:p-4 dark:bg-slate-800 dark:border-slate-700">
           <h2 class="font-semibold mb-3" data-i18n="monthly_income_vs_expense">Monthly Income vs Expense</h2>
           <div class="relative h-[280px]">
             <canvas id="monthlyChart" class="!w-full !h-full"></canvas>
           </div>
         </div>
-        <div class="bg-white border border-slate-200 rounded-xl p-4 dark:bg-slate-800 dark:border-slate-700">
+        <div class="bg-white border border-slate-200 rounded-xl p-3 sm:p-4 dark:bg-slate-800 dark:border-slate-700">
           <h2 class="font-semibold mb-3" data-i18n="expense_by_category">Expense by Category</h2>
           <div class="relative h-[280px]">
             <canvas id="categoryChart" class="!w-full !h-full"></canvas>
