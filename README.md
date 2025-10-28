@@ -22,6 +22,8 @@ A lightweight, single-page app to track earnings and spendings with charts and l
 - Use "Reset" to clear all data.
 
 ## Tech Stack and framework used:
+- HTML
+- Javascript
 - TailwindCSS 
 - Chart.js
 - Vanilla JS, no build step required
